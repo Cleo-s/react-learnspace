@@ -14,7 +14,8 @@ export function Cars() {
             setError(error.message);
             setIsLoading(false);
         })
-    }, []);
+    }, 
+    []);
 
     if (isLoading)
         return <h2>Loading...</h2>
